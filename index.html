@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>PeTIK Jombang · Program & Beasiswa | YBM PLN</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
+  <style>
+    :root{
+      --petik-blue: #0077C0;
+      --petik-toska: #06C1A0;
+      --petik-yellow: #F8D233;
+      --muted-white: rgba(255,255,255,0.92);
+    }
+
+    /* Global */
+    body {
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+      color: #222;
+      line-height: 1.6;
+    }
+
+    /* Hero gradient */
+    .hero {
+      background: linear-gradient(135deg, var(--petik-blue), var(--petik-toska) 55%, var(--petik-yellow));
+      color: white;
+      padding: 6rem 0 4rem;
+      position: relative;
+      overflow: hidden;
+    }
+    .hero .lead {
+      color: rgba(255,255,255,0.95);
+    }
+    .hero .badge-cta {
+      background: rgba(255,255,255,0.12);
+      border: 1px solid rgba(255,255,255,0.12);
+    }
+
+    /* Cards & sections */
+    .feature-card {
+      background: white;
+      border-radius: 12px;
+      padding: 1.25rem;
+      box-shadow: 0 6px 18px rgba(6,20,30,0.06);
+      height: 100%;
+    }
+
+    .program-card img {
+      height: 160px;
+      object-fit: cover;
+      border-top-left-radius: 8px;
+      border-top-right-radius: 8px;
+    }
+
+    .program-card .card-body {
+      padding: 1rem;
+    }
+
+    .cta-btn {
+      background: var(--petik-yellow);
+      color: #042;
+      font-weight: 600;
+      border-radius: 10px;
+      padding: 0.6rem 1.1rem;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+    }
+
+    /* Testimonial */
+    .testimonial {
+      background: #fff;
+      border-radius: 10px;
+      padding: 1.25rem;
+      box-shadow: 0 8px 26px rgba(2,20,40,0.06);
+    }
+
+    /* Gallery */
+    .gallery img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+
+    /* Footer gradient */
+    .footer-gradient {
+      background: linear-gradient(135deg, var(--petik-blue), var(--petik-toska), var(--petik-yellow));
+      color: white;
+    }
+    .footer-logo {
+      max-width: 220px;
+      filter: drop-shadow(0 6px 18px rgba(0,0,0,0.15));
+    }
+
+    @media (max-width: 767px){
+      .hero { padding: 3.5rem 0 2rem; }
+      .hero .display-5 { font-size: 1.6rem; }
+      .gallery img { height: 120px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center gap-2" href="#">
+        <img src="zzz.png" alt="PeTIK x YBM PLN" style="height: 120px;">
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMain">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navMain">
+        <ul class="navbar-nav ms-3">
+          <li class="nav-item"><a class="nav-link" href="#program">Program</a></li>
+          <li class="nav-item"><a class="nav-link" href="#keunggulan">Keunggulan</a></li>
+          <li class="nav-item"><a class="nav-link" href="#testimoni">Testimoni</a></li>
+          <li class="nav-item"><a class="nav-link" href="#galeri">Galeri</a></li>
+          <li class="nav-item"><a class="nav-link" href="#kontak">Kontak</a></li>
+        </ul>
+
+        <div class="ms-auto d-flex gap-2">
+          <a href="#daftar" class="btn btn-outline-primary d-none d-md-inline-flex align-items-center">
+            <i class="bi bi-info-circle me-2"></i> Info
+          </a>
+          <a href="#daftar" class="cta-btn d-inline-flex align-items-center">
+            <i class="bi bi-pencil-square me-2"></i> Daftar Sekarang
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header class="hero">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-7">
+          <span class="badge badge-cta px-3 py-2 text-white rounded-pill mb-3">Beasiswa YBM PLN • Gratis</span>
+          <h1 class="display-5 fw-bold">Belajar & Berkembang Bersama <br class="d-none d-md-block"> PeTIK Jombang</h1>
+          <p class="lead mt-3">Kembangkan kemampuan digital Anda dengan program intensif, mentor profesional, dan dukungan beasiswa dari YBM PLN.</p>
+
+          <div class="mt-4 d-flex gap-3 flex-wrap">
+            <a href="#program" class="btn btn-light btn-lg">Lihat Program</a>
+            <a href="#daftar" class="cta-btn btn-lg">Daftar Sekarang</a>
+          </div>
+
+          <div class="mt-4 d-flex gap-3">
+            <div class="d-flex align-items-center text-white-75">
+              <i class="bi bi-people-fill fs-4 me-2"></i>
+              <div>
+                <div class="fw-bold">300+</div>
+                <small>Alumni</small>
+              </div>
+            </div>
+
+            <div class="d-flex align-items-center text-white-75 ms-4">
+              <i class="bi bi-briefcase-fill fs-4 me-2"></i>
+              <div>
+                <div class="fw-bold">80%</div>
+                <small>Penempatan Kerja</small>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="col-md-5 mt-4 mt-md-0">
+          <div class="card shadow-lg" style="border-radius:16px; overflow:hidden;">
+            <img src="zzz.png" alt="Ilustrasi" style="width:100%; height:320px; object-fit:cover;">
+            <div class="card-body">
+              <h5 class="card-title">Jadwal Angkatan Terbaru</h5>
+              <p class="card-text">Gabung kelas intensif kami — tempat terbatas setiap angkatan. Cek info dan jadwal.</p>
+              <a href="#daftar" class="btn btn-primary">Cek Jadwal</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </header>
+
+  <!-- KEUNGGULAN -->
+  <section id="keunggulan" class="py-5">
+    <div class="container">
+      <div class="text-center mb-4">
+        <h3 class="fw-bold">Kenapa Memilih PeTIK?</h3>
+        <p class="text-muted">Program praktis, mentor berpengalaman, dukungan beasiswa dari YBM PLN.</p>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-md-3">
+          <div class="feature-card text-center p-4">
+            <div class="mb-3 display-6 text-primary"><i class="bi bi-award-fill"></i></div>
+            <h6 class="fw-bold">Beasiswa & Gratis</h6>
+            <p class="small text-muted">Dukungan penuh dari YBM PLN untuk peserta berprestasi.</p>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="feature-card text-center p-4">
+            <div class="mb-3 display-6" style="color:var(--petik-toska)"><i class="bi bi-people-fill"></i></div>
+            <h6 class="fw-bold">Mentor Profesional</h6>
+            <p class="small text-muted">Instruktur praktisi industri berpengalaman.</p>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="feature-card text-center p-4">
+            <div class="mb-3 display-6" style="color:var(--petik-yellow)"><i class="bi bi-laptop"></i></div>
+            <h6 class="fw-bold">Kurikulum Praktikal</h6>
+            <p class="small text-muted">Proyek real-world yang siap pakai untuk portofolio.</p>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="feature-card text-center p-4">
+            <div class="mb-3 display-6 text-success"><i class="bi bi-award"></i></div>
+            <h6 class="fw-bold">Penempatan Kerja</h6>
+            <p class="small text-muted">Networking & job-placement bagi lulusan.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROGRAM -->
+  <section id="program" class="py-5 bg-light">
+    <div class="container">
+      <div class="d-flex justify-content-between align-items-center mb-4">
+        <div>
+          <h3 class="fw-bold mb-0">Program Unggulan</h3>
+          <p class="text-muted mb-0">Pilih jalur pembelajaran yang sesuai dengan tujuan karier Anda.</p>
+        </div>
+        <div class="d-none d-md-block">
+          <a href="#daftar" class="btn btn-outline-primary">Lihat Semua Program</a>
+        </div>
+      </div>
+
+      <div class="row g-4">
+        <!-- card 1 -->
+        <div class="col-md-4">
+          <div class="card program-card h-100">
+            <img src="ful.png" class="card-img-top" alt="Web Dev">
+            <div class="card-body">
+              <h5 class="card-title">Fullstack Web Development</h5>
+              <p class="card-text text-muted">HTML, CSS, JavaScript, Node.js, React — proyek nyata untuk portofolio.</p>
+              <div class="d-flex justify-content-between align-items-center mt-3">
+                <small class="text-muted">Gratis</small>
+                <a href="#daftar" class="btn btn-sm btn-primary">Daftar</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- card 2 -->
+        <div class="col-md-4">
+          <div class="card program-card h-100">
+            <img src="ui.jpg" class="card-img-top" alt="UI/UX">
+            <div class="card-body">
+              <h5 class="card-title">UI / UX Design</h5>
+              <p class="card-text text-muted">Desain antarmuka, prototyping, dan user testing dengan studi kasus.</p>
+              <div class="d-flex justify-content-between align-items-center mt-3">
+                <small class="text-muted">Gratis</small>
+                <a href="#daftar" class="btn btn-sm btn-primary">Daftar</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- card 3 -->
+        <div class="col-md-4">
+          <div class="card program-card h-100">
+            <img src="dm.jpg" class="card-img-top" alt="Digital Marketing">
+            <div class="card-body">
+              <h5 class="card-title">Digital Marketing</h5>
+              <p class="card-text text-muted">SEO, Ads, Content Strategy, dan analitik untuk bisnis digital.</p>
+              <div class="d-flex justify-content-between align-items-center mt-3">
+                <small class="text-muted">Gratis</small>
+                <a href="#daftar" class="btn btn-sm btn-primary">Daftar</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIAL -->
+  <section id="testimoni" class="py-5">
+    <div class="container">
+      <div class="text-center mb-4">
+        <h3 class="fw-bold">Apa Kata Alumni?</h3>
+        <p class="text-muted">Pengalaman nyata alumni setelah ikut program PeTIK.</p>
+      </div>
+
+      <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="row justify-content-center">
+              <div class="col-md-8">
+                <div class="testimonial text-center p-4">
+                  <img src="ps.jpg" alt="alumni" class="rounded-circle mb-3" style="width:100px;height:100px;object-fit:cover;">
+                  <h6 class="fw-bold">Siti Nur A.</h6>
+                  <p class="small text-muted">""</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="row justify-content-center">
+              <div class="col-md-8">
+                <div class="testimonial text-center p-4">
+                  <img src="ts.jpg" alt="alumni" class="rounded-circle mb-3" style="width:100px;height:100px;object-fit:cover;">
+                  <h6 class="fw-bold">Abrar Ghifari</h6>
+                  <p class="small text-muted">"</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="d-flex justify-content-center mt-3">
+          <button class="btn btn-sm btn-outline-secondary me-2" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev"><i class="bi bi-chevron-left"></i></button>
+          <button class="btn btn-sm btn-outline-secondary" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next"><i class="bi bi-chevron-right"></i></button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALERI -->
+  <section id="galeri" class="py-5 bg-light">
+    <div class="container">
+      <div class="text-center mb-4">
+        <h3 class="fw-bold">Galeri Kegiatan</h3>
+        <p class="text-muted">Dokumentasi pembelajaran & kegiatan komunitas.</p>
+      </div>
+
+      <div class="row g-3 gallery">
+        <div class="col-6 col-md-3"><img src="petik1.jpg" alt=""></div>
+        <div class="col-6 col-md-3"><img src="ngaji.jpg" alt=""></div>
+        <div class="col-6 col-md-3"><img src="lab.jpg" alt=""></div>
+        <div class="col-6 col-md-3"><img src="ws.jpg" alt=""></div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- KONTAK / CTA -->
+  <section id="kontak" class="py-5">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-7">
+          <h4 class="fw-bold">Butuh info lebih lanjut?</h4>
+          <p class="text-muted">Hubungi kami atau daftar sekarang — tim kami siap membantu proses pendaftaran dan beasiswa.</p>
+
+          <div class="d-flex gap-3 flex-wrap">
+            <a href="tel:081234567890" class="btn btn-outline-dark">📞 0812-3456-7890</a>
+            <a href="mailto:info@petikjombang.or.id" class="btn btn-outline-dark">✉️ info@petikjombang.or.id</a>
+            <a href="#daftar" class="cta-btn">Daftar Sekarang</a>
+          </div>
+        </div>
+
+        <div class="col-md-5 mt-4 mt-md-0">
+          <div class="card p-3 shadow-sm">
+            <h6 class="fw-bold mb-2">Alamat</h6>
+            <p class="small text-muted mb-2">Jl. Raya Jogoloyo No.17, Mojowarno, Kab. Jombang, Jawa Timur</p>
+            <!-- Jika mau, bisa ganti src berikut dengan embed google maps -->
+            <img src="map.png" alt="map" style="width:100%; border-radius:8px; height:160px; object-fit:cover;">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER FINAL (PeTIK x YBM PLN theme) -->
+  <footer class="footer-gradient text-white pt-5 pb-3 mt-5">
+    <div class="container">
+
+      <div class="row text-center text-md-start">
+
+        <!-- Logo -->
+        <div class="col-md-4 mb-4">
+          <img src="zzz.png" alt="Logo PeTIK & YBM PLN" class="footer-logo">
+          <p class="mt-3">Pusat Pendidikan Teknologi Informasi & Komunikasi (PeTIK) Jombang</p>
+        </div>
+
+        <!-- Alamat -->
+        <div class="col-md-4 mb-4">
+          <h5 class="fw-bold">Alamat</h5>
+          <p class="mb-1">Jl. Raya Jogoloyo No.17, Mojowarno</p>
+          <p class="mb-1">Kab. Jombang, Jawa Timur</p>
+          <p class="mb-0">Indonesia, 61475</p>
+        </div>
+
+        <!-- Kontak & Sosial Media -->
+        <div class="col-md-4 mb-4">
+          <h5 class="fw-bold">Kontak</h5>
+          <p class="mb-1">📞 0812-3456-7890</p>
+          <p class="mb-3">✉️ info@petikjombang.or.id</p>
+
+          <h5 class="fw-bold mt-3">Ikuti Kami</h5>
+          <a href="#" class="text-white me-3 fs-5">🌐</a>
+          <a href="#" class="text-white me-3 fs-5">📘</a>
+          <a href="#" class="text-white me-3 fs-5">📸</a>
+          <a href="#" class="text-white fs-5">▶️</a>
+        </div>
+
+      </div>
+
+      <hr class="border-light">
+
+      <div class="text-center">
+        <p class="mb-0">© 2025 PeTIK Jombang | YBM PLN. All Rights Reserved.</p>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
